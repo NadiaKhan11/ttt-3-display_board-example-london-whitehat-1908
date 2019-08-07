@@ -1,1 +1,2 @@
-# Define a method display_board that prints a 3x3 Tic Tac Toe Board
+def displayboard(board)
+  board.clone.split(//).each_slice(3).to_a.map { |row| row.join("|") }.join 
